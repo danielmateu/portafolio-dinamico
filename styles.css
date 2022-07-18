@@ -124,3 +124,60 @@ header .categorias a.activo {
     vertical-align: top;
 }
 /* FIN GRID */
+
+/* OVERLAY */
+.overlay{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.725);
+    width:100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #7f7f7f;
+}
+
+.overlay.activo{
+    display: flex;
+}
+
+.overlay img{
+    max-width: 100%;
+
+}
+
+.overlay .descripcion{
+    display: block;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    max-width: 50%; 
+}
+
+.contenedor-img {
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup{
+    background: none;
+    font-size:20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    right: -20px;
+    top: -20px; 
+
+}
+/* FIN OVERLAY */
+

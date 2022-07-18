@@ -10,11 +10,11 @@ window.addEventListener('load', ()=> {
     grid.refreshItems().layout();
     document.getElementById('grid').classList.add('imagenes-cargadas');
 
-    //Enlaces de filtrado
-
+    
+    //Agregamos los listener de los enlaces para filtrar por categoria
     const enlaces = document.querySelectorAll('#categorias a');
-    enlaces.forEach((enlace)=> {
-        enlace.addEventListener('click', (evento)=>{
+    enlaces.forEach((elemento)=> {
+        elemento.addEventListener('click', (evento)=>{
             evento.preventDefault();
             enlaces.forEach((enlace)=> enlace.classList.remove('activo'))
             evento.target.classList.add('activo');
@@ -25,6 +25,40 @@ window.addEventListener('load', ()=> {
             
         })
     })
+
+    //Agregamos el Listener para la barra de búsqueda
+
+    document.querySelector('#barra-busqueda').addEventListener('input', (evento)=>{
+        const busqueda = evento.target.value;
+        grid.filter( (item) =>item.getElement().dataset.etiquetas.includes(busqueda)) 
+
+    })
+
+    //Agregamos listener para las imagenes 
+
+    const overlay = document.getElementById('overlay');
+    document.querySelectorAll('.grid .item img').forEach((elemento)=>{
+        const ruta = elemento.getAttribute('src');
+        const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+        
+        elemento.addEventListener('click', () => {
+            overlay.classList.add('activo')
+            document.querySelector('#overlay img').src = ruta;
+            document.querySelector('#overlay .descripcion').innerHTML = descripcion;
+        })
+    });
+
+    //EventListener del boton cerrar la imag
+    document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
+        overlay.classList.remove('activo');
+    })
+
+    //EventListener del overlay
+
+    overlay.addEventListener('click', (evento)=> {
+        evento.target.id === 'overlay' ? overlay.classList.remove('activo'):'';
+    })
+
 
 })
 
