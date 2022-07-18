@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Dinamico - Daniel Mateu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT AWESOME -->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&family=Roboto+Slab:wght@300&family=Roboto:wght@500&family=Supermercado+One&family=The+Nautigal&family=Vollkorn+SC&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <div class="contenedor">
         <header>
@@ -18,7 +34,7 @@
                 <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="buscador...">
             </form>
             <div class="categorias" id="categorias">
-                <a href="#" class="activos">Todos</a>
+                <a href="#" class="activo">Todos</a>
                 <a href="#">Naturaleza</a>
                 <a href="#">Ciudades</a>
                 <a href="#">Persona</a>
@@ -27,90 +43,99 @@
         </header>
 
         <section class="grid" id="grid">
-            <div class="item"
-                    data-categorias="ciudades"
-                    data-etiqueta="ciudades autos carros coches calles"
-                    data-descripcion="1.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/ciudad1.png" alt="Imagen ciudad">
-            </div>
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades autos carros calles"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad1.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="ciudades"
-                    data-etiqueta="ciudades autos carros coches calles"
-                    data-descripcion="2.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/ciudad2.png" alt="Imagen ciudad">
-            </div>
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona1.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="animales"
-                    data-etiqueta="animales leones peludos mamiferos"
-                    data-descripcion="4.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/animal1.png" alt="Imagen animal">
-            </div>
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas mar playas"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje1.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="animales"
-                    data-etiqueta="animales pandas peludos dormidos"
-                    data-descripcion="5.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/animal2.png" alt="Imagen animal">
-            </div>
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales leones"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/animal1.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="naturaleza"
-                    data-etiqueta="naturaleza plantas verde hojas"
-                    data-descripcion="6.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/naturaleza1.png" alt="Imagen naturaleza">
-            </div>
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales pandas"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/animal2.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="paisajes"
-                    data-etiqueta="paisajes naturaleza montaña mar cielo nuves"
-                    data-descripcion="6.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/paisaje1.png" alt="Imagen paisaje">
-            </div>
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="paisajes"
-                    data-etiqueta="paisajes naturaleza montaña  cielo nuves"
-                    data-descripcion="7.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/paisaje2.png" alt="Imagen naturaleza">
-            </div>
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje2.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="personas"
-                    data-etiqueta="personas mujeres retrato belleza"
-                    data-descripcion="1.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/persona1.png" alt="Imagen mujer">
-            </div>
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad2.png" alt="">
+				</div>
+			</div>
 
-            <div class="item"
-                    data-categorias="personas"
-                    data-etiqueta="personas mujeres retrato belleza"
-                    data-descripcion="1.- lorem ipsum dolor sit amet, consectetur adip"
-            >
-            <div class="item-contenido">
-                <img src="img/persona2.png" alt="Imagen mujer">
-            </div>
-
-            </div>
-        </section>
-
+			<div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="img/naturaleza1.png" alt="">
+				</div>
+			</div>
+		</section>
+        
+        
         <section class="overlay" id="overlay">
             <div class="contenedor-img">
                 <button id="btn-cerrar-popup">
@@ -120,8 +145,8 @@
             </div>
             <p class="descripcion"></p>
         </section>
-
-        <footer class="contenedor-footer">
+        
+        <footer class="contenedor">
             <div class="redes-sociales">
                 <div class="contenedor-icono">
                     <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
@@ -133,17 +158,23 @@
                     <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-
+            
             <div class="creado-por">
                 <p>Sitio diseñado por <a href="#">Daniel Mateu</a> - <a href="#">danielmateueb</a></p>
             </div>
         </footer>
-
+        
     </div>
-
-    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-	<script src="main.js"></script>
     
+
+
+<!-- Libreria MUURI -->
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+<!-- Libreria MUURI -->
+
+    <script src="./app.js"></script>
+
 </body>
+
 </html>
