@@ -47,7 +47,7 @@ header .barra-busqueda {
 	width: 70%;
 	height: 40px;
 	line-height: 40px;
-	background: #fff;
+	background: rgba(173, 173, 173, 0.353);
 	padding: 0 20px;
 	border-radius: 100px;
 	border: none;
@@ -93,9 +93,16 @@ header .categorias a.activo {
 .grid{
     position: relative;
     width: 100%;
+    opacity: 0;
+    transition: opacity .5s linear 1s ;
+    -webkit-transition: opacity .5s linear 1s ;
+    -moz-transition: opacity .5s linear 1s ;
+    -ms-transition: opacity .5s linear 1s ;
+    -o-transition: opacity .5s linear 1s ;
+}
 
-    /*  */
-    /*  */
+.grid.imagenes-cargadas{
+    opacity:1;
 }
 
 .grid .item{

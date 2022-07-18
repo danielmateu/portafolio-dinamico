@@ -4,3 +4,27 @@ const grid = new Muuri('.grid',{
         rounding: false,
     }
 });
+
+
+window.addEventListener('load', ()=> {
+    grid.refreshItems().layout();
+    document.getElementById('grid').classList.add('imagenes-cargadas');
+
+    //Enlaces de filtrado
+
+    const enlaces = document.querySelectorAll('#categorias a');
+    enlaces.forEach((enlace)=> {
+        enlace.addEventListener('click', (evento)=>{
+            evento.preventDefault();
+            enlaces.forEach((enlace)=> enlace.classList.remove('activo'))
+            evento.target.classList.add('activo');
+
+            const categoria = evento.target.innerHTML.toLowerCase();
+
+            categoria === 'todos' ? grid.filter('[data-categoria') : grid.filter(`[data-categoria="${categoria}"]`);
+            
+        })
+    })
+
+})
+
