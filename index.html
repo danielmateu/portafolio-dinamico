@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Dinamico - Daniel Mateu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Daniel Mateu</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="buscador...">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activos">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Persona</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item"
+                    data-categorias="ciudades"
+                    data-etiqueta="ciudades autos carros coches calles"
+                    data-descripcion="1.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/ciudad1.png" alt="Imagen ciudad">
+            </div>
+
+            <div class="item"
+                    data-categorias="ciudades"
+                    data-etiqueta="ciudades autos carros coches calles"
+                    data-descripcion="2.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/ciudad2.png" alt="Imagen ciudad">
+            </div>
+
+            <div class="item"
+                    data-categorias="animales"
+                    data-etiqueta="animales leones peludos mamiferos"
+                    data-descripcion="4.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/animal1.png" alt="Imagen animal">
+            </div>
+
+            <div class="item"
+                    data-categorias="animales"
+                    data-etiqueta="animales pandas peludos dormidos"
+                    data-descripcion="5.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/animal2.png" alt="Imagen animal">
+            </div>
+
+            <div class="item"
+                    data-categorias="naturaleza"
+                    data-etiqueta="naturaleza plantas verde hojas"
+                    data-descripcion="6.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/naturaleza1.png" alt="Imagen naturaleza">
+            </div>
+
+            <div class="item"
+                    data-categorias="paisajes"
+                    data-etiqueta="paisajes naturaleza montaña mar cielo nuves"
+                    data-descripcion="6.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/paisaje1.png" alt="Imagen paisaje">
+            </div>
+
+            <div class="item"
+                    data-categorias="paisajes"
+                    data-etiqueta="paisajes naturaleza montaña  cielo nuves"
+                    data-descripcion="7.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/paisaje2.png" alt="Imagen naturaleza">
+            </div>
+
+            <div class="item"
+                    data-categorias="personas"
+                    data-etiqueta="personas mujeres retrato belleza"
+                    data-descripcion="1.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/persona1.png" alt="Imagen mujer">
+            </div>
+
+            <div class="item"
+                    data-categorias="personas"
+                    data-etiqueta="personas mujeres retrato belleza"
+                    data-descripcion="1.- lorem ipsum dolor sit amet, consectetur adip"
+            >
+            <div class="item-contenido">
+                <img src="img/persona2.png" alt="Imagen mujer">
+            </div>
+
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor-footer">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="creado-por">
+                <p>Sitio diseñado por <a href="#">Daniel Mateu</a> - <a href="#">danielmateueb</a></p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
