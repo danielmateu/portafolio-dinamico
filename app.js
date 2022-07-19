@@ -56,6 +56,7 @@ window.addEventListener('load', ()=> {
     //EventListener del overlay
 
     overlay.addEventListener('click', (evento)=> {
+        // console.log(evento.target);
         evento.target.id === 'overlay' ? overlay.classList.remove('activo'):'';
     })
 
